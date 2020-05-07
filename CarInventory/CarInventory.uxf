@@ -1,0 +1,293 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<diagram program="umlet" version="14.3.0">
+  <zoom_level>10</zoom_level>
+  <element>
+    <id>UMLPackage</id>
+    <coordinates>
+      <x>100</x>
+      <y>10</y>
+      <w>180</w>
+      <h>190</h>
+    </coordinates>
+    <panel_attributes>Role Class
+--
++role_id: int
++role_title: string
++role_description: string
+--
++addRole()
++editRole()
++deleteRole()
++searchRole()
++assignRole()
+bg=yellow
+fg=black</panel_attributes>
+    <additional_attributes/>
+  </element>
+  <element>
+    <id>UMLPackage</id>
+    <coordinates>
+      <x>380</x>
+      <y>10</y>
+      <w>210</w>
+      <h>190</h>
+    </coordinates>
+    <panel_attributes>Permission Class
+--
++permisslon_id: int 
++permission_role_id:int 
++permission_title: string 
++permission_module: string 
++permission_description: string
+--
++addPermissioon()
++editPermission()
++deletePermission()
++searchPermission()
+bg=yellow
+fg=black</panel_attributes>
+    <additional_attributes/>
+  </element>
+  <element>
+    <id>UMLPackage</id>
+    <coordinates>
+      <x>750</x>
+      <y>0</y>
+      <w>210</w>
+      <h>240</h>
+    </coordinates>
+    <panel_attributes>Car Owner Class
+--
++car_owner_id: int
++car_owner_name: string
++car_owner_mobile: int
++car_owner_email: string
++car_owner_username: string
++car_owner_password: string
++car_owner_address: string
+--
++addCarOwners()
++editCar Owners()
++deleteCar Owners()
++updateCar Owners()
++saveCar Owners()
++searchCar Owners()
+bg=yellow
+fg=black</panel_attributes>
+    <additional_attributes/>
+  </element>
+  <element>
+    <id>UMLPackage</id>
+    <coordinates>
+      <x>70</x>
+      <y>310</y>
+      <w>180</w>
+      <h>200</h>
+    </coordinates>
+    <panel_attributes>User Class
+--
++user id: int
++user_role_id: int
++user_name: string
++user_email: string
++user_dob: date
++user_address: string
+--
++addUser()
++editUser()
++deteteUser()
++searchUser()
+bg=yellow
+fg=black</panel_attributes>
+    <additional_attributes/>
+  </element>
+  <element>
+    <id>UMLPackage</id>
+    <coordinates>
+      <x>760</x>
+      <y>280</y>
+      <w>200</w>
+      <h>250</h>
+    </coordinates>
+    <panel_attributes>Customer Class
+--
++customer_id: int
++customer_name: string
++customer_mobile: int
++customer_email: string
++customer_username: string
++customer_password: string
++customer_address: string
+--
++addCustomer()
++editCustomer()
++deleteCustomer()
++updateCustomer()
++saveCustomer()
++searchCustomer()
+bg=yellow
+fg=black</panel_attributes>
+    <additional_attributes/>
+  </element>
+  <element>
+    <id>UMLPackage</id>
+    <coordinates>
+      <x>720</x>
+      <y>560</y>
+      <w>200</w>
+      <h>220</h>
+    </coordinates>
+    <panel_attributes>Inventory Class
+--
++inventory_id: int
++inventory_items: string
++inventory_number: int
++inventory_type: string
++inventory_description: string
+--
++addInventory()
++editInventory()
++deleteInventory()
++updateInventory()
++saveInventory()
++searchInventory()
+bg=yellow
+fg=black</panel_attributes>
+    <additional_attributes/>
+  </element>
+  <element>
+    <id>UMLPackage</id>
+    <coordinates>
+      <x>170</x>
+      <y>570</y>
+      <w>210</w>
+      <h>250</h>
+    </coordinates>
+    <panel_attributes>Car Class
+--
++car_id: int
++car_driver_id: string
++car_customer_id: int
++car_number: string
++car_company: string
++car_type: string
++car_description: string
+--
++addCars()
++editCars()
++deleteCars()
++updateCars()
++saveCars()
++searchCars()
+bg=yellow
+fg=black</panel_attributes>
+    <additional_attributes/>
+  </element>
+  <element>
+    <id>UMLPackage</id>
+    <coordinates>
+      <x>460</x>
+      <y>490</y>
+      <w>200</w>
+      <h>230</h>
+    </coordinates>
+    <panel_attributes>Car Model Class
+--
++car_model_id: int
++car_model_number: string
++car_model_year: int
++car_model_name: string
++car_model_type: string
++car_model_description: string
+--
++addCarModels()
++editCarModels()
++deleteCarModels()
++updateCarModels()
++saveCarModels()
++searchCarModels()
+bg=yellow
+fg=black</panel_attributes>
+    <additional_attributes/>
+  </element>
+  <element>
+    <id>Relation</id>
+    <coordinates>
+      <x>580</x>
+      <y>70</y>
+      <w>190</w>
+      <h>50</h>
+    </coordinates>
+    <panel_attributes>lt=&lt;&lt;&lt;&lt;-</panel_attributes>
+    <additional_attributes>10.0;30.0;90.0;30.0;90.0;10.0;170.0;10.0</additional_attributes>
+  </element>
+  <element>
+    <id>Relation</id>
+    <coordinates>
+      <x>420</x>
+      <y>190</y>
+      <w>370</w>
+      <h>110</h>
+    </coordinates>
+    <panel_attributes>lt=&lt;&lt;&lt;&lt;-</panel_attributes>
+    <additional_attributes>10.0;10.0;10.0;60.0;350.0;60.0;350.0;90.0</additional_attributes>
+  </element>
+  <element>
+    <id>Relation</id>
+    <coordinates>
+      <x>220</x>
+      <y>240</y>
+      <w>230</w>
+      <h>350</h>
+    </coordinates>
+    <panel_attributes>lt=-
+</panel_attributes>
+    <additional_attributes>10.0;330.0;10.0;290.0;120.0;290.0;120.0;170.0;210.0;170.0;210.0;10.0</additional_attributes>
+  </element>
+  <element>
+    <id>Relation</id>
+    <coordinates>
+      <x>420</x>
+      <y>370</y>
+      <w>90</w>
+      <h>140</h>
+    </coordinates>
+    <panel_attributes>lt=-
+</panel_attributes>
+    <additional_attributes>70.0;120.0;70.0;10.0;10.0;10.0</additional_attributes>
+  </element>
+  <element>
+    <id>Relation</id>
+    <coordinates>
+      <x>420</x>
+      <y>330</y>
+      <w>330</w>
+      <h>250</h>
+    </coordinates>
+    <panel_attributes>lt=-
+</panel_attributes>
+    <additional_attributes>310.0;230.0;310.0;10.0;10.0;10.0</additional_attributes>
+  </element>
+  <element>
+    <id>Relation</id>
+    <coordinates>
+      <x>30</x>
+      <y>90</y>
+      <w>90</w>
+      <h>240</h>
+    </coordinates>
+    <panel_attributes>lt=&lt;&lt;-</panel_attributes>
+    <additional_attributes>70.0;10.0;10.0;10.0;10.0;150.0;60.0;150.0;60.0;220.0</additional_attributes>
+  </element>
+  <element>
+    <id>Relation</id>
+    <coordinates>
+      <x>240</x>
+      <y>90</y>
+      <w>160</w>
+      <h>300</h>
+    </coordinates>
+    <panel_attributes>lt=&lt;&lt;-</panel_attributes>
+    <additional_attributes>140.0;10.0;90.0;10.0;90.0;280.0;10.0;280.0</additional_attributes>
+  </element>
+</diagram>
